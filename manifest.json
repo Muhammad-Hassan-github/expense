@@ -1,6 +1,6 @@
 {
-  "name": "JTM Hand Feeding Formula",
-  "short_name": "JTM",
+  "name": "Home Expense",
+  "short_name": "Expnse",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#4a6a7a",

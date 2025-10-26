@@ -41,7 +41,7 @@ shareBtn.addEventListener("click", async () => {
   const qty = qtyInput.value;
   const total = qty * productPrice;
   const shareData = {
-    title: "JTM Hand Feeding Formula",
+    title: "Home Expense",
     text: `Check out JTM Hand Feeding Formula 🐦\nI want to order ${qty} pack(s). Total = Rs ${total}`,
     url: window.location.href
   };
