@@ -1,0 +1,230 @@
+body {
+  font-family: 'Poppins', 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Segoe UI', sans-serif;
+  background: #334d5c;   /* Dark teal-ish background */
+  margin: 0;
+  padding: 0;
+  color: #e0e6e8;       /* Light grayish text for readability */
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  padding-top: 0px;
+
+}
+
+h2, h4 {
+  text-align: center;
+  color: #ffb347;  /* Soft warm orange */
+}
+
+h4 {
+  color: #ffffff;
+}
+
+.items {
+  display: grid;
+  gap: 20px;
+}
+
+.item {
+  background: #406675;  /* Slightly lighter than bg */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(255, 179, 71, 0.5); /* orange glow */
+}
+
+.item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+  border: 1px solid #ffb347; /* subtle border highlight */
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info h3 {
+  margin: 0;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  color: #f0f4f6;  /* lighter text */
+}
+
+.item-info span {
+  font-size: 14px;
+  color: #cfd8dc;  /* soft light text */
+  text-align: right;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.qty-controls button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ffb347; /* warm orange */
+  color: #334d5c; /* background color for contrast */
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.qty-controls button:hover {
+  background-color: #ffa726; /* slightly brighter orange on hover */
+}
+
+.qty-controls span {
+  min-width: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #e0e6e8;
+}
+
+.total {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  margin: 20px 0;
+  color: #f0f4f6;
+}
+
+#orderBtn {
+  background-color: #ff7043; /* mellow orange */
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#orderBtn:hover {
+  background-color: #ff5722;
+}
+
+#backBtn {
+  background-color: #ffb347;
+  color: #334d5c;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#backBtn:hover {
+  background-color: #ffa726;
+}
+
+.install-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 77, 92, 0.85); /* semi-transparent version of bg */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.install-content {
+  background: #406675;
+  padding: 20px 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  max-width: 300px;
+  color: #e0e6e8;
+}
+
+.install-content h3 {
+  margin: 0 0 10px;
+  color: #ffb347;
+}
+
+.install-content p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #cfd8dc;
+}
+
+.install-content button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#install-confirm {
+  background-color: #ff7043;
+  color: white;
+}
+
+#install-confirm:hover {
+  background-color: #ff5722;
+}
+
+#install-cancel {
+  background-color: #607d8b;
+  color: white;
+}
+
+#install-cancel:hover {
+  background-color: #455a64;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Noto Nastaliq Urdu';
+  src: url('./fonts/NotoNastaliqUrdu-Regular.ttf') format('truetype');
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+#shareBtn:hover {
+   background-color: #ff5722;
+}
+
+
+.popup-box{
+  color: black !important;
+
+}
