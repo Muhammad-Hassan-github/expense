@@ -1,4 +1,4 @@
-const CACHE_NAME = "jtm-feed-cache-debug";
+const CACHE_NAME = "Expense";
 
 const urlsToCache = [
   "/",
